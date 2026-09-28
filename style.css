@@ -1,0 +1,113 @@
+:root {
+  --paper: #f6f7f5;
+  --ink: #1c2530;
+  --ink-soft: #4b5661;
+  --rule: #d5dad8;
+  --accent: #2b6a7c;
+  --accent-deep: #1f4f5d;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { color: var(--accent-deep); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.site-header {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--rule);
+}
+
+.wordmark {
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+nav { display: flex; gap: 1.25rem; }
+nav a { color: var(--ink-soft); text-decoration: none; }
+nav a:hover { color: var(--ink); }
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+.intro {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.portrait {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--rule);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.lede {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+  max-width: 28rem;
+}
+
+section + section { margin-top: 3rem; }
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--accent-deep);
+}
+
+p { margin: 0 0 1rem; max-width: 40rem; }
+
+footer {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 560px) {
+  .intro { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+  .portrait { width: 128px; height: 128px; }
+  h1 { font-size: 2rem; }
+}
