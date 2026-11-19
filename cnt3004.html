@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CNT 3004 | Itzel Bracho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Itzel Bracho</a>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="cnt3004.html" aria-current="page">CNT 3004</a>
+      <a href="resume.pdf">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-intro">
+      <h1>CNT 3004: Computer Network Concepts</h1>
+      <p class="lede">University of Central Florida, Fall 2026. Reflections on each homework lab, the quizzes and discussions, and the course as a whole.</p>
+      <nav class="toc" aria-label="On this page">
+        <a href="#hw1">Homework 1</a>
+        <a href="#hw2">Homework 2</a>
+        <a href="#hw3">Homework 3</a>
+        <a href="#hw4">Homework 4</a>
+        <a href="#hw5-6">Homework 5 and 6</a>
+        <a href="#quizzes-discussions">Quizzes and discussions</a>
+        <a href="#overall">Overall reflection</a>
+      </nav>
+    </section>
+
+    <section id="hw1" class="entry">
+      <h2>Homework 1: Networking Fundamentals and Infrastructure</h2>
+      <h3>Experience</h3>
+      <p>The first lab laid the groundwork for the rest of the course. It covered the OSI model, network topologies, client-server and peer-to-peer models, the devices that make up a network, and how physical infrastructure is organized and documented. Because I already work around network equipment, it was useful to finally put formal names and structure to things I see on the job.</p>
+      <h3>Key skills and concepts</h3>
+      <p>The seven OSI layers and what happens at each one, the roles of switches, routers, and access points, structured cabling and how rooms like the MDF and IDF fit together, and why network documentation and change management matter.</p>
+      <h3>Challenges</h3>
+      <p>Keeping the OSI layers straight was harder than expected, especially deciding which layer a specific protocol or device belongs to. Mapping each concept to a real piece of hardware I had worked with made the layers much easier to remember.</p>
+      <h3>Takeaway</h3>
+      <p>The OSI model is a troubleshooting tool as much as a theory. Working from the physical layer up gives a clear, repeatable way to narrow down where a problem actually is.</p>
+    </section>
+
+    <section id="hw2" class="entry">
+      <h2>Homework 2: Network Addressing, Protocols, and Routing</h2>
+      <h3>Experience</h3>
+      <p>This lab focused on how devices find and talk to each other. I worked through MAC, IPv4, and IPv6 addressing, how DHCP and DNS operate, and how TCP, UDP, and ports allow many services to share one connection. I also used command-line tools such as ipconfig, ping, tracert, nslookup, and arp to see these processes on a real machine.</p>
+      <h3>Key skills and concepts</h3>
+      <p>Address types and classes, public versus private addressing, the DHCP lease process, DNS resolution and record types, well-known ports, the difference between connection-oriented and connectionless protocols, and the basics of how routers choose a path.</p>
+      <h3>Challenges</h3>
+      <p>IPv6 notation took practice, especially the rules for shortening addresses. DNS record types also blended together at first until I tied each one to what it is actually used for.</p>
+      <h3>Takeaway</h3>
+      <p>Most everyday "the internet is down" problems turn out to be addressing or name resolution issues. Knowing how to check an IP configuration and test DNS from the command line is one of the most practical skills I took from the course.</p>
+    </section>
+
+    <section id="hw3" class="entry">
+      <h2>Homework 3: Network Media and Wireless Networking</h2>
+      <h3>Experience</h3>
+      <p>This lab moved down to the physical layer and into the air. It covered copper and fiber cabling, connector types, Power over Ethernet, and the 802.11 wireless standards, along with how frequency bands, channels, and interference affect performance. It connected closely to my work, where wireless authentication and coverage problems come up regularly.</p>
+      <h3>Key skills and concepts</h3>
+      <p>Twisted pair categories and the T568A and T568B wiring standards, single-mode versus multimode fiber, PoE, Wi-Fi generations and their frequency bands, channel planning to avoid overlap, and wireless security including WPA2, WPA3, and enterprise authentication.</p>
+      <h3>Challenges</h3>
+      <p>Memorizing the wireless standards and their speeds, bands, and ranges was the hardest part. Fiber connector types were also easy to mix up since many look similar.</p>
+      <h3>Takeaway</h3>
+      <p>Wireless performance depends on the environment as much as the hardware. Understanding channels, interference, and authentication helped me troubleshoot Wi-Fi with a clearer process instead of trial and error.</p>
+    </section>
+
+    <section id="hw4" class="entry">
+      <h2>Homework 4: Virtualization, Cloud Computing, Subnets, and VLANs</h2>
+      <h3>Experience</h3>
+      <p>This lab combined two big topics: running networks and servers virtually, and dividing networks into smaller, manageable pieces. I had already built virtual machines for a Windows Server project, so the virtualization concepts felt familiar, but subnetting and VLANs required much more focused practice.</p>
+      <h3>Key skills and concepts</h3>
+      <p>Type 1 and Type 2 hypervisors, virtual switches and NICs, the IaaS, PaaS, and SaaS cloud models, CIDR notation, calculating subnets, hosts, and broadcast addresses, and how VLANs and 802.1Q trunking separate traffic on shared switches.</p>
+      <h3>Challenges</h3>
+      <p>Subnetting by hand was the biggest challenge of the semester. Working through many practice problems and checking each step in binary is what finally made it click.</p>
+      <h3>Takeaway</h3>
+      <p>Subnets and VLANs are the foundation of network segmentation, which is also a core security practice. This lab showed me how design decisions directly affect both performance and security.</p>
+    </section>
+
+    <section id="hw5-6" class="entry">
+      <h2>Homework 5 and 6: Network Security, Performance, Recovery, and WANs</h2>
+      <h3>Experience</h3>
+      <p>The final combined lab covered the most ground: how networks are attacked and defended, how they are monitored and kept running, how organizations recover from failures, and how sites connect across wide area networks. It tied together nearly everything from earlier in the semester.</p>
+      <h3>Key skills and concepts</h3>
+      <p>Common threats and social engineering, firewalls, access control lists, IDS and IPS, network access control, monitoring with SNMP and syslog, quality of service, redundancy and high availability, backup strategies and recovery objectives, and WAN technologies including MPLS and SD-WAN.</p>
+      <h3>Challenges</h3>
+      <p>The amount of material across four chapters was the main challenge. I had to break the work into sections and connect each security control to the specific threat it addresses so the concepts didn't run together.</p>
+      <h3>Takeaway</h3>
+      <p>Security and reliability are designed into a network, not added at the end. This lab confirmed my interest in network security, since it showed how much protecting a network depends on understanding how it is built.</p>
+    </section>
+
+    <section id="quizzes-discussions" class="entry">
+      <h2>Quizzes and discussions</h2>
+      <p>The six chapter quizzes kept me reviewing the material steadily instead of cramming, and they lined up closely with the CompTIA Network+ objectives I'm studying for. They were a good check on which topics I understood and which needed another pass before the midterm.</p>
+      <p>The weekly discussions pushed me to look past the textbook at where networking is heading. Topics included networking trends for 2026, remote work productivity, cloud computing, the future of fiber optics, Wi-Fi 7, IPv6 adoption, blockchain, the Internet of Things, edge computing, and deception technology in network security. Researching Wi-Fi 7 and IPv6 adoption was especially relevant to my work, and the deception technology discussion introduced me to honeypots and decoys as an active defense strategy, which I'd like to explore further as I move toward security. Reading classmates' posts also showed me different perspectives on the same technologies.</p>
+    </section>
+
+    <section id="overall" class="entry">
+      <h2>Overall reflection</h2>
+      <p>Coming into this course, most of my experience was hands-on: hardware, cabling, and fixing problems as they came up. CNT 3004 gave me the framework behind that work. I now understand how a network is layered, how devices are addressed and find each other, how traffic is segmented with subnets and VLANs, and how networks are secured, monitored, and recovered when something fails.</p>
+      <p>My skills improved most in subnetting, wireless troubleshooting, and thinking through problems methodically from the physical layer up. I can now explain why a fix works, not only that it works, which has already made me more effective at my job.</p>
+      <p>This course contributes directly to my career goals. Its content maps closely to the Network+ exam I'm preparing for, and the security material gave me a clear picture of the network security path I want to pursue after graduation.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Itzel Bracho, 2026. Built for CNT 3004 at UCF.</p>
+  </footer>
+
+</body>
+</html>

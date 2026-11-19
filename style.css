@@ -111,3 +111,39 @@ footer {
   .portrait { width: 128px; height: 128px; }
   h1 { font-size: 2rem; }
 }
+
+/* Part 2 additions */
+nav a[aria-current="page"] { color: var(--ink); font-weight: 500; }
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.4rem 0 0.4rem;
+  color: var(--ink);
+}
+h2 + h3 { margin-top: 0.5rem; }
+
+ul { margin: 0 0 1rem; padding-left: 1.25rem; max-width: 40rem; }
+li { margin-bottom: 0.4rem; }
+
+.page-intro { margin-bottom: 3rem; }
+.page-intro h1 { font-size: 2.1rem; }
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.toc a { color: var(--ink-soft); text-decoration: none; font-size: 0.95rem; }
+.toc a:hover { color: var(--accent); }
+
+.entry { scroll-margin-top: 1.5rem; }
+
+@media (max-width: 560px) {
+  .page-intro h1 { font-size: 1.7rem; }
+  nav { gap: 0.9rem; }
+}
